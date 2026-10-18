@@ -1,0 +1,1068 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Petit+Formal+Script&display=swap');
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #fff8eb;
+  background: #071d36;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #071d36;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 5%;
+  background: #071d36;
+  border-bottom: 1px solid rgba(255, 202, 85, 0.22);
+}
+
+.logo {
+  color: #ffca55;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: #fff8eb;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffca55;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.role-label {
+  color: #ffca55;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.nav-button {
+  background: transparent;
+  color: #ffca55;
+  border: 1px solid #ffca55;
+  border-radius: 30px;
+  padding: 10px 17px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-button:hover {
+  background: #ffca55;
+  color: #071d36;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 690px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 6%;
+  text-align: center;
+  background:
+    linear-gradient(
+      rgba(4, 17, 35, 0.58),
+      rgba(4, 17, 35, 0.74)
+    ),
+    linear-gradient(135deg, #071d36, #102b4d);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+}
+
+.section-eyebrow {
+  display: block;
+  color: #ffca55;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 25px 0;
+  line-height: 1.2;
+}
+
+.hero-first-line {
+  color: #fff8eb;
+  font-family: "Petit Formal Script", cursive;
+  font-size: clamp(55px, 8vw, 105px);
+  font-weight: 400;
+}
+
+.hero-second-line {
+  color: #ffca55;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(48px, 7vw, 90px);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.hero-description {
+  color: #fff8eb;
+  font-family: "Caveat", cursive;
+  font-size: clamp(26px, 3vw, 37px);
+  line-height: 1.4;
+  margin: 20px 0 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.primary-btn,
+.secondary-btn {
+  border-radius: 30px;
+  padding: 15px 28px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.primary-btn {
+  background: #ffca55;
+  color: #071d36;
+  border: 1px solid #ffca55;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #fff8eb;
+  border: 1px solid #fff8eb;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-caption {
+  margin-top: 55px;
+  color: #ffca55;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+/* SHARED SECTION HEADINGS */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  margin: 15px 0;
+  color: #ffca55;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: clamp(34px, 5vw, 56px);
+  font-weight: 500;
+}
+
+.section-heading p {
+  color: #fff8eb;
+  font-family: "Caveat", cursive;
+  font-size: 28px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* MARKETPLACE GALLERY */
+
+.gallery {
+  padding: 90px 7%;
+  background:
+    linear-gradient(
+      rgba(7, 29, 54, 0.94),
+      rgba(7, 29, 54, 0.97)
+    ),
+    linear-gradient(#071d36, #071d36);
+}
+
+.market-toolbar {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-btn {
+  background: transparent;
+  color: #fff8eb;
+  border: 1px solid rgba(255, 202, 85, 0.6);
+  border-radius: 30px;
+  padding: 11px 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #ffca55;
+  color: #071d36;
+}
+
+.cart-shortcut {
+  background: #ffca55;
+  color: #071d36;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 22px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gallery-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.art-card {
+  background: #fff8eb;
+  border: 1px solid #ffca55;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.art-card:hover {
+  transform: translateY(-5px);
+}
+
+.art-preview {
+  position: relative;
+  width: 100%;
+  height: 285px;
+  background: #eee6d7;
+}
+
+.art-preview img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.art-type {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background: #fff8eb;
+  color: #071d36;
+  border-radius: 20px;
+  padding: 7px 13px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.like-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 38px;
+  height: 38px;
+  background: #fff8eb;
+  color: #b24c55;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.art-details {
+  padding: 24px;
+}
+
+.artist-name {
+  color: #a8782d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.art-details h3 {
+  color: #071d36;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 26px;
+  margin: 12px 0;
+}
+
+.art-details p {
+  color: #756b5c;
+  font-size: 13px;
+  line-height: 1.7;
+  min-height: 45px;
+}
+
+.art-bottom {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e8d9bf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.art-bottom strong {
+  color: #071d36;
+  font-size: 20px;
+}
+
+.buy-button {
+  background: #071d36;
+  color: #fff8eb;
+  border: none;
+  border-radius: 30px;
+  padding: 11px 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.buy-button:hover:not(:disabled) {
+  background: #12395f;
+}
+
+.status-text {
+  text-align: center;
+  color: #ffca55;
+  margin: 25px 0;
+}
+
+/* ARTIST DASHBOARD */
+
+.artist-dashboard {
+  padding: 90px 7%;
+  background: #071d36;
+}
+
+.dashboard-stats {
+  max-width: 1200px;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.dashboard-stat-card {
+  background: #fff8eb;
+  border: 1px solid #ffca55;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-stat-card span {
+  display: block;
+  color: #a8782d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.dashboard-stat-card strong {
+  display: block;
+  color: #071d36;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 40px;
+  margin: 12px 0;
+}
+
+.dashboard-stat-card p {
+  color: #756b5c;
+  font-size: 13px;
+  margin: 0;
+}
+
+.dashboard-panel {
+  max-width: 1200px;
+  margin: 35px auto;
+  background: #fff8eb;
+  border: 1px solid #ffca55;
+  border-radius: 18px;
+  padding: 30px;
+  color: #071d36;
+}
+
+.dashboard-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.dashboard-panel-header h3 {
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 29px;
+  color: #071d36;
+  margin: 0;
+}
+
+.dashboard-action {
+  background: #ffca55;
+  color: #071d36;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 22px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.dashboard-action:hover:not(:disabled) {
+  background: #efb83f;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.collection-card {
+  background: white;
+  border: 1px solid #f0dba9;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.collection-card img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.collection-card-info {
+  padding: 18px;
+}
+
+.collection-card-info h4 {
+  color: #071d36;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.collection-card-info p {
+  color: #756b5c;
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+.collection-card-info strong {
+  color: #a8782d;
+  font-size: 19px;
+}
+
+.sales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sale-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  border: 1px solid #f0dba9;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.sale-row h4 {
+  color: #071d36;
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+
+.sale-row p {
+  color: #756b5c;
+  margin: 0 0 5px;
+}
+
+.sale-row small {
+  color: #a8782d;
+}
+
+.sale-row strong {
+  color: #071d36;
+  font-size: 20px;
+}
+
+/* ARTIST UPLOAD STUDIO */
+
+.studio {
+  padding: 90px 7%;
+  background:
+    linear-gradient(
+      rgba(7, 29, 54, 0.95),
+      rgba(7, 29, 54, 0.98)
+    ),
+    linear-gradient(#071d36, #071d36);
+}
+
+.upload-box {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff8eb;
+  color: #071d36;
+  border: 2px solid #ffca55;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.upload-icon {
+  text-align: center;
+  font-size: 42px;
+}
+
+.upload-box h3 {
+  color: #071d36;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 32px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.upload-box > p {
+  color: #756b5c;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.upload-box label {
+  color: #071d36;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.upload-box input,
+.upload-box textarea,
+.upload-box select {
+  width: 100%;
+  background: white;
+  color: #071d36;
+  border: 1px solid #dbc9a8;
+  border-radius: 9px;
+  padding: 13px 15px;
+  outline: none;
+}
+
+.upload-box input:focus,
+.upload-box textarea:focus,
+.upload-box select:focus {
+  border-color: #c89737;
+  box-shadow: 0 0 0 3px rgba(255, 202, 85, 0.2);
+}
+
+.upload-box textarea {
+  resize: vertical;
+}
+
+.artwork-preview {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.artwork-preview img {
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.publish-button {
+  width: 100%;
+  margin-top: 15px;
+  background: #ffca55;
+  color: #071d36;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.publish-button:hover:not(:disabled) {
+  background: #efb83f;
+}
+
+/* SHOPPING CART AND ORDER HISTORY */
+
+.cart-section {
+  padding: 90px 7%;
+  background: #071d36;
+}
+
+.cart-box {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #fff8eb;
+  border: 1px solid #ffca55;
+  border-radius: 18px;
+  color: #071d36;
+}
+
+.empty-cart {
+  color: #756b5c;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 27px;
+  padding: 25px 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e8d9bf;
+}
+
+.cart-item > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info h3 {
+  color: #071d36;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.cart-item-info p {
+  color: #756b5c;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.cart-item-info strong {
+  display: inline-block;
+  margin-top: 5px;
+  color: #a8782d;
+  font-size: 18px;
+}
+
+.remove-btn {
+  background: transparent;
+  color: #a33939;
+  border: 1px solid #d9a6a6;
+  border-radius: 20px;
+  padding: 9px 15px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #e8d9bf;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.cart-total strong {
+  font-size: 25px;
+  color: #071d36;
+}
+
+.checkout-note {
+  text-align: center;
+  color: #756b5c;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+/* NOTIFICATION */
+
+.toast-message {
+  position: fixed;
+  z-index: 100;
+  bottom: 25px;
+  right: 25px;
+  max-width: min(420px, calc(100vw - 40px));
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffca55;
+  color: #071d36;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.toast-message button {
+  background: transparent;
+  color: #071d36;
+  border: none;
+  font-size: 23px;
+  line-height: 1;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #041326;
+  border-top: 1px solid rgba(255, 202, 85, 0.25);
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.footer h3 {
+  color: #ffca55;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 27px;
+  margin: 0 0 12px;
+}
+
+.footer p {
+  color: #fff8eb;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+
+.footer span {
+  color: #aaa8a3;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 18px 4%;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 620px;
+    padding: 85px 5%;
+  }
+
+  .hero-caption {
+    letter-spacing: 1.5px;
+  }
+
+  .gallery,
+  .artist-dashboard,
+  .studio,
+  .cart-section {
+    padding: 65px 5%;
+  }
+
+  .gallery-grid,
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-toolbar {
+    justify-content: center;
+  }
+
+  .dashboard-panel {
+    padding: 20px;
+  }
+
+  .dashboard-panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .upload-box {
+    padding: 25px 20px;
+  }
+
+  .cart-box {
+    padding: 22px;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
+  .cart-item > img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sale-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toast-message {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* Meet the Founder — append to the END of frontend/src/App.css */
+.founder-section {
+  padding: 90px 24px;
+  background: linear-gradient(135deg, #fff9ec 0%, #fff3e9 52%, #fff9f0 100%);
+  color: #4c382d;
+  scroll-margin-top: 85px;
+}
+.founder-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(30px, 6vw, 90px);
+  align-items: center;
+}
+.founder-photo-wrap {
+  padding: 12px;
+  border: 1px solid #d9bd83;
+  border-radius: 190px 190px 18px 18px;
+  background: #fffdf7;
+  box-shadow: 0 16px 45px rgba(92, 60, 34, 0.12);
+}
+.founder-photo {
+  display: block;
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 180px 180px 10px 10px;
+}
+.founder-eyebrow {
+  color: #ad792c;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+}
+.founder-story h2 {
+  margin: 12px 0 6px;
+  font-family: Georgia, serif;
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  color: #5b3d2c;
+}
+.founder-story h3 {
+  margin: 0 0 24px;
+  color: #a87736;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+}
+.founder-story p {
+  font-size: 1.02rem;
+  line-height: 1.9;
+  margin: 0 0 20px;
+}
+.founder-story .founder-quote {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  color: #8b5c35;
+}
+.founder-story .founder-signature {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #aa762f;
+  font-size: 1.15rem;
+  margin-top: 26px;
+}
+@media (max-width: 760px) {
+  .founder-section { padding: 58px 20px; }
+  .founder-inner { grid-template-columns: 1fr; gap: 30px; }
+  .founder-photo-wrap { max-width: 380px; width: 100%; margin: 0 auto; }
+  .founder-photo { height: 400px; }
+}
+
+
+/* VAN GOGH ART ONLY IN THE BOTTOM FOOTER */
+.footer {
+  min-height: clamp(185px, 28vw, 345px);
+  padding: 0;
+  border-top: 1px solid rgba(255, 202, 85, 0.25);
+  background: #071d36 url("/starry-night.png") center / 100% 100% no-repeat;
+}
+/* The background picture already contains these words. */
+.footer h3,
+.footer p,
+.footer span {
+  display: none;
+}
+
+/* RESTORE TOP STARRY NIGHT BACKGROUND */
+
+.hero {
+  background:
+    linear-gradient(
+      rgba(4, 17, 35, 0.58),
+      rgba(4, 17, 35, 0.74)
+    ),
+    url("/starry-night.jpg") center / cover no-repeat !important;
+
+  min-height: 690px;
+  padding: 100px 6%;
+}
+
+/* KEEP FOUNDER PHOTO AT NORMAL SIZE */
+
+.founder-photo {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}

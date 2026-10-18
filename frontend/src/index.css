@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #292333;
+  background: #fff8ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+h1, h2, h3 {
+  font-family: 'Kalam', cursive;
+}
