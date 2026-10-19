@@ -310,7 +310,7 @@ const artistNames = Object.fromEntries(
     setAiError("");
     try {
       const response = await fetch(
-        import.meta.env.VITE_AI_API_URL || "http://127.0.0.1:8001/generate-description",
+        import.meta.env.VITE_AI_API_URL || "https://artpreneur.onrender.com/generate-description",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
