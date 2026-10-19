@@ -74,7 +74,22 @@ function App({ user, profile, onSignOut }) {
         .order("created_at", { ascending: false });
 
       if (error) throw error;
+const artistIds = [...new Set(
+  (data || []).map((art) => art.artist_id).filter(Boolean)
+)];
 
+const { data: artistProfiles, error: profilesError } = await supabase
+  .from("profiles")
+  .select("id, full_name")
+  .in("id", artistIds);
+
+if (profilesError) {
+  console.error("Artist profiles error:", profilesError);
+}
+
+const artistNames = Object.fromEntries(
+  (artistProfiles || []).map((p) => [p.id, p.full_name])
+);
       const uploaded = (data || []).map((art) => {
         const { data: imageData } = supabase.storage
           .from("artworks")
@@ -83,9 +98,9 @@ function App({ user, profile, onSignOut }) {
         return {
           ...art,
           artist:
-            art.artist_id === user?.id
-              ? profile?.full_name || "You"
-              : "Independent Artist",
+  artistNames[art.artist_id] ||
+  (art.artist_id === user?.id ? profile?.full_name : null) ||
+  "Independent Artist",
           image: imageData.publicUrl,
           sample: false,
         };
