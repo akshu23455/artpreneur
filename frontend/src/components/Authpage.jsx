@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { supabase } from "../supabaseClient";
-import "./AuthPage.css";
+import "./Authpage.css";
 
 export default function AuthPage() {
   const [role, setRole] = useState("artist");
