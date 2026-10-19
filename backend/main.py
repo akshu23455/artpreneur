@@ -12,9 +12,10 @@ app = FastAPI(title="Artpreneur AI Backend")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173"
-    ],
+    "https://artpreneur-lyart.vercel.app",
+    "http://127.0.0.1:5173",
+],
+allow_origin_regex=r"https://artpreneur-[a-zA-Z0-9-]+\.vercel\.app",
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
