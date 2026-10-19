@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import Authpage from "./components/Authpage.jsx";
+import AuthPage from "./components/Authpage.jsx";
 import { supabase } from "./supabaseClient.js";
 import "./index.css";
 
